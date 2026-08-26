@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Details Section</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="demographics.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="employment.html" style="position: absolute; top: 30px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Employment Details</a>
+	<!--<button style=>General Details</button>-->
+	<a href="general.html" style="position: absolute; top: 8px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="demographics.html" style="position: absolute; top: 30px; left: 30px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General</a>
+	<button id="occupation" style="position: absolute; top: 80px; left: 450px;">Occupation</button>
+		<script>
+			document.getElementById('occupation').onclick = function() {
+				swal.fire({
+					title: 'The Occupation',
+					text: 'For Farmers, let us agree that it should be farmer',
+					icon: 'success',
+					confirmButtonText: 'Are we happy?'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 80px; left: 538px;" name="status" id="status">
+					<option value="farmer">Farmer</option>
+					<!--<option value="live">Live-in relationship</option>
+					<option value="married">Married</option>
+					<option value="notgiven">Not Given</option>
+					<option value="separated">Separated</option>
+					<option value="single">Single</option>
+					<option value="widowed">Widowed</option>-->
+			</select>
+		</form>
+		
+	<button id="employername" style="position: absolute; top: 120px; left: 450px;">Employer Name</button>
+		<script>
+			document.getElementById('employername').onclick = function() {
+				swal.fire({
+					title: 'The Employer Name',
+					text: 'For Farmers, let us agree that it should be self employed or employed others or the actual employer name.',
+					icon: 'success',
+					confirmButtonText: 'I hope we all agree.'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 120px; left: 570px;" name="status" id="status">
+					<option value="selfemployed">Self Employed</option>
+					<option value="employedothers">Employed Other</option>
+					<option value="realname">"Real Employer Name"</option>
+					<!--<option value="notgiven">Not Given</option>
+					<option value="separated">Separated</option>
+					<option value="single">Single</option>
+					<option value="widowed">Widowed</option>-->
+			</select>
+		</form>
+		
+	<button id="employmenttype" style="position: absolute; top: 80px; left: 50px;">Employment Type</button>
+		<script>
+			document.getElementById('employmenttype').onclick = function() {
+				swal.fire({
+					title: 'The Employment Type.',
+					text: 'Kindly Select the most Appropriate option from this list.',
+					icon: 'success',
+					confirmButtonText: 'Kindly be open minded.'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 80px; left: 175px;" name="status" id="status">
+					<option value="contractor">Contractor</option>
+					<option value="b">Employed full Time-B</option>
+					<option value="o">Employed Full Time-O</option>
+					<option value="bp">Employed Part Time-B</option>
+					<option value="eo">Employed Part Time-O</option>
+					<option value="notdisclosed">Not Disclosed</option>
+					<option value="once">Other-once off</option>
+					<option value="recurring">Other-Recurring</option>
+					<option value="private">Private Practice</option>
+					<option value="retired">Retired/Pensioner</option>
+					<option value="selfemployed">Self Employed</option>
+					<option value="student">Student</option>
+					<option value="unemployed">Unemployed</option>
+			</select>
+		</form>
+<script src="sweetalert2.min.js"></script>
+
+</body>
+</html>
