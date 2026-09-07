@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Details Section</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="generalTeacher.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
+	<!--<button>General Details</button>-->
+	<a href="demographicsTeacher.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<!--<button>Demographics</button>
+	<button>Something</button>
+	<button>Something</button>
+	<button>Something</button>
+	
+	<button>General Details</button>
+	<button>Demographics</button>-->
+	<!--<button style="position: absolute; top: 30px; left: 120px;">Contact Details</button>-->
+	<a href="contactTeacher.html" style="position: absolute; top: 40px; left: 105px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Contact Details</a>
+	<!--<button style="position: absolute; top: 30px; left: 230px;">Identification Details</button>-->
+	<a href="contactTeacher.html" style="position: absolute; top: 40px; left: 230px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Identification Details</a>
+	<!--<button style="position: absolute; top: 30px; left: 10px;">Basic Info</button>-->
+	<a href="generalTeacher.html" style="position: absolute; top: 40px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Basic Info</a>
+    <!--<h1>How to use sweetalert2 offline.</h1>
+
+    <button onclick="Swal.fire({
+        title: 'Know Your Customer ?',
+        text: 'We know that a code can mean different things to different people so allow us to standardise this stuff to make worki easy and stop the confusion',
+        icon: 'question'
+    });">Click me to show alert</button>-->
+
+    <button style="border: none; outline: none; background: transparent; cursor: not-allowed; position: absolute; top: 180px; left: 680px;">Primary</button>
+    <button id="primary" style="position: absolute; top: 180px; left: 750px;">Education/P85</button>
+		<script>
+		document.getElementById('primary').onclick = function() {
+			swal.fire({
+				title: 'Education/P85!',
+				text: 'We recommend this option because it best aligns/matches what the customer does. The secondary code will match the Primary by default.',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+    <button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 200px; left: 50px;">Secondary</button>
+    <button style="position: absolute; top: 200px; left: 140px;">SHOULD MATCH/ALIGN WITH PRIMARY</button>
+    <!--<button style="border: none; outline: none; background: transparent; cursor: not-allowed; position: absolute; top: 440px; left: 50px;">Reserve</button>
+    -->
+	
+	<button id="reserve" style="position: absolute; top: 460px; left: 50px;">Reserve Code</button>
+		<script>
+			document.getElementById('reserve').onclick = function() {
+				swal.fire({
+					title: 'Reserve Code.',
+					text: 'Please only use the option shown !',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+		
+	
+		<form>
+			<!--<label for="codes">Reserve:</label>-->
+				<select style="position: absolute; top: 460px; left: 155px;" name="codes" id="codes">
+					<option value="education">Community, Social and Other Services; Education Services</option>
+					<!-- <option value="fishing">Agriculture Fishing</option>
+					<option value="forestry">Agriculture Forestry</option>
+					<option value="marketing">Agriculture Marketing</option>
+					<option value="other">Agriculture Other</option>
+					<option value="processing">Agriculture Processing</option> -->
+			</select>
+		</form>
+    <!--<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 220px; left: 380px;">bullocks</button>
+    <button id="buttocks"; style="position: absolute; top: 220px; left: 450px;">buttocks</button>
+	<script>
+		document.getElementById('buttocks').onclick = function() {
+			swal.fire({
+				title: 'Nice Buttocks!',
+				text: 'Those things look nice and I dare say even good to touch but when they are clean and willingly allowed to be touched!',
+				icon: 'success',
+				confirmButtonText: 'Cool'
+			});
+		};
+
+	</script>-->
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 560px; left: 50px;">Share my Personal Information</button>
+    <button id="share"; style="position: absolute; top: 560px; left: 280px;">?</button>
+		<script>
+			document.getElementById('share').onclick = function() {
+				swal.fire({
+					title: 'Share my personal information within the group...',
+					text: 'The customer is giving his consent to share his personal information within the business. By Default it is Yes or Y.',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 560px; left: 750px;">Communicate other companies products, services,etc</button>
+    <button id="communicate"; style="position: absolute; top: 560px; left: 1100px;">?</button>
+				<script>
+			document.getElementById('communicate').onclick = function() {
+				swal.fire({
+					title: 'Communicate other companies products, services and special offers to me.',
+					text: "The customer is giving his consent to receive information about another entity and it's products . By Default it is Yes or Y.",
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 600px; left: 50px;">Contact me for Research purposes</button>
+    <button id="contact"; style="position: absolute; top: 600px; left: 280px;">?</button>
+	<script>
+		document.getElementById('contact').onclick = function() {
+			swal.fire({
+				title: 'Contact me for Research Purposes!',
+				text: 'This Applies to whether the customer is interested in paricipating in any research conducted by the business',
+				icon: 'success',
+				confirmButtonText: "Okay"
+			});
+		};
+
+	</script>
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 600px; left: 750px;">Market your products, etc to me</button>
+    <button id="market"; style="position: absolute; top: 600px; left: 1100px;">?</button>
+	<script>
+		document.getElementById('market').onclick = function() {
+			swal.fire({
+				title: 'Market your products, services and special offers to me!',
+				text: 'The customer is being asked whether the organisation should continue advertising any other offers it might have for him/her.',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<button id="accommodation"; style="position: absolute; top: 650px; left: 50px;">Accommodation Type</button>
+	<script>
+		document.getElementById('accommodation').onclick = function() {
+			swal.fire({
+				title: 'Accommodation Type!',
+				text: 'Always make sure this matches the Application form!',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<form>
+			<!--<label for="accommodation">Accommodation Type</label>-->
+				<select style="position: absolute; top: 650px; left: 200px;" name="accommodation" id="accommodation">
+					<option value="boarding">Boarding</option>
+					<option value="buying on deed of sale commune">Buying on Deed of Sale Commune</option>
+					<option value="freefromemployer">Free from employer</option>
+					<option value="livewithotherfamily">Live with other family</option>
+					<option value="livewithparents">Lives with parents</option>
+					<option value="notdisclosed">Not Disclosed</option>
+					<option value="other">Other</option>
+					<option value="own-bonded">Own-Bonded</option>
+					<option value="owner">Owner</option>
+					<option value="own-unbonded">Own-unbonded</option>
+					<option value="rentfromemployer">Rent from Employer</option>
+					<option value="rent/tenant">Rent/Tenant</option>
+					<option value="staffquarters">Staff Quarters</option>
+			</select>
+		</form>
+		
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 680px; left: 50px;">Monthly Net Income</button>
+    <button id="currency"; style="position: absolute; top: 680px; left: 200px;">By Default it is UGX</button>
+	<button id="pencil"; style="position: absolute; top: 680px; left: 340px;">00000000000/=</button>
+	<script>
+		document.getElementById('currency').onclick = function() {
+			swal.fire({
+				title: 'Currency Type!',
+				text: 'By Default, it is usually UGX .',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 720px; left: 50px;">Industry Classification code or SARB</button>
+    <button id="sarb"; style="position: absolute; top: 720px; left: 280px;">Education</button>
+	<script>
+		document.getElementById('sarb').onclick = function() {
+			swal.fire({
+				title: 'Education/P85!',
+				text: 'This is the ONLY code for Education Professionals in this category and ALWAYS fill this in!',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 780px; left: 750px;">PEP</button>
+    <button id="pep"; style="position: absolute; top: 780px; left: 1100px;">?</button>
+	<script>
+		document.getElementById('pep').onclick = function() {
+			swal.fire({
+				title: 'PEP!',
+				text: 'Whenever this value is Y/YES, then provide a source of wealth form and understand that EDD high risk has to be progressed on your end!',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 750px; left: 750px;">Risk Category</button>
+    <button id="high"; style="position: absolute; top: 750px; left: 1100px;">?</button>
+	<script>
+		document.getElementById('high').onclick = function() {
+			swal.fire({
+				title: 'Risk Category',
+				text: 'Whenever this value is H/High, ask and index the most recent/current proof of income and know that you have to progress EDD under high risk!',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+
+<script src="sweetalert2.min.js"></script>
+
+</body>
+</html>

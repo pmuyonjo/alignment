@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demographics Details Section</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="demographicsStudent.html" style="position: absolute; top: 8px; left: 135px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="employmentStudent.html" style="position: absolute; top: 40px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Employment Details</a>
+	<!--<button style=>General Details</button>-->
+	<a href="generalStudent.html" style="position: absolute; top: 8px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="demographicsStudent.html" style="position: absolute; top: 40px; left: 30px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General</a>
+	<button id="marital" style="position: absolute; top: 300px; left: 450px;">Marital Status</button>
+		<script>
+			document.getElementById('marital').onclick = function() {
+				swal.fire({
+					title: 'The Marital Status',
+					text: 'Please select the most appropriate option from the list given that matches what the customer stated in his/her own handwriting, "Not Given" is also an option.',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 300px; left: 550px;" name="status" id="status">
+					<option value="divorced">Divorced</option>
+					<option value="live">Live-in relationship</option>
+					<option value="married">Married</option>
+					<option value="notgiven">Not Given</option>
+					<option value="separated">Separated</option>
+					<option value="single">Single</option>
+					<option value="widowed">Widowed</option>
+			</select>
+		</form>
+<script src="sweetalert2.min.js"></script>
+
+</body>
+</html>

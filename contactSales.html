@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="demographicsSales.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="generalSales.html" style="position: absolute; top: 40px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="generalSales.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
+	<a href="identificationSales.html" style="position: absolute; top: 40px; left: 270px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Identification Details</a>
+	<!--<button style="position: absolute; top: 8px; left: 5px;">General Details</button>
+	<button style="position: absolute; top: 8px; left: 120px;">Demographics</button>
+	<button style="position: absolute; top: 8px; left: 225px;">Something</button>
+	<button>Something</button>
+	<button>Something</button>
+	
+	<button>General Details</button>
+	<button>Demographics</button>
+	<button>Something</button>
+	<button>Something</button>-->
+	<!--<button style="position: absolute; top: 30px; left: 10px;">General Details</button>-->
+	<button id="contact" style="position: absolute; top: 40px; left: 140px; font-size: 16px; font-weight: 800px;">Phone Contact</button>
+		<script>
+		document.getElementById('contact').onclick = function() {
+			swal.fire({
+				title: 'Contacts;Personal phone number, Next Of Kin and Email Address !',
+				text: 'We need the correct contact for personalisation, to detect fraud, contacting next of Kin and any other communication with the client!',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<script src="sweetalert2.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Details Section</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="demographicsSelf.html" style="position: absolute; top: 8px; left: 135px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="employmentSelf.html" style="position: absolute; top: 40px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Employment Details</a>
+	<!--<button style=>General Details</button>-->
+	<a href="generalSelf.html" style="position: absolute; top: 8px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="demographicsSelf.html" style="position: absolute; top: 40px; left: 30px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General</a>
+	<button id="occupation" style="position: absolute; top: 80px; left: 450px;">Occupation</button>
+		<script>
+			document.getElementById('occupation').onclick = function() {
+				swal.fire({
+					title: 'The Occupation',
+					text: 'Kindly select the most appropriate option from the list provided',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 80px; left: 538px;" name="status" id="status">
+					<option value="skilled">Skilled Worker</option>
+					<option value="professional">Professional</option>
+					<option value="nonskilled">Non Skilled Worker</option>
+					<option value="Personnel">Personnel Services</option>
+					<option value="sales">Sales</option>
+					<option value="artisan">Artisan</option>
+					<option value="sport">Sport and Entertainment</option>
+                    <option value="surveyor">Surveyor</option>
+                    <option value="telecomms">Telecomms</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="financial">Financial Services</option>
+                    <option value="community">Community Services</option>
+                    <option value="construction">Construction</option>
+                    <option value="security">Security</option>
+                    <option value="architect">Architect</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="clerical">Clerical</option>
+			</select>
+		</form>
+		
+	<button id="employername" style="position: absolute; top: 120px; left: 450px;">Employer Name</button>
+		<script>
+			document.getElementById('employername').onclick = function() {
+				swal.fire({
+					title: 'The Employer Name',
+					text: 'For This Category, self employed other or "business name " should work.',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 120px; left: 570px;" name="status" id="status">
+					<option value="selfemployed">Self Employed</option>
+					<option value="business">"Business Name"</option>
+					<!--<option value="realname">"Government entity employing the customer"</option>
+					<option value="notgiven">Not Given</option>
+					<option value="separated">Separated</option>
+					<option value="single">Single</option>
+					<option value="widowed">Widowed</option>-->
+			</select>
+		</form>
+		
+	<button id="employmenttype" style="position: absolute; top: 80px; left: 50px;">Employment Type</button>
+		<script>
+			document.getElementById('employmenttype').onclick = function() {
+				swal.fire({
+					title: 'The Employment Type.',
+					text: 'Kindly Select the most Appropriate option from this list.',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 80px; left: 175px;" name="status" id="status">
+					<option value="contractor">Contractor</option>
+					<option value="b">Employed full Time-B</option>
+					<option value="o">Employed Full Time-O</option>
+					<option value="bp">Employed Part Time-B</option>
+					<option value="eo">Employed Part Time-O</option>
+					<option value="notdisclosed">Not Disclosed</option>
+					<option value="once">Other-once off</option>
+					<option value="recurring">Other-Recurring</option>
+					<option value="private">Private Practice</option>
+					<option value="retired">Retired/Pensioner</option>
+					<option value="selfemployed">Self Employed</option>
+					<option value="student">Student</option>
+					<option value="unemployed">Unemployed</option>
+			</select>
+		</form>
+<script src="sweetalert2.min.js"></script>
+
+</body>
+</html>

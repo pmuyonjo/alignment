@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identification Details</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="demographicsSales.html" style="position: absolute; top: 8px; left: 130px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="generalSales.html" style="position: absolute; top: 30px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="generalSales.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
+	<a href="contactSales.html" style="position: absolute; top: 31px; left: 135px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Contact Details</a>
+	<!--<button style="position: absolute; top: 8px; left: 5px;">General Details</button>
+	
+	<button style="position: absolute; top: 8px; left: 120px;">Demographics</button>
+	<button style="position: absolute; top: 8px; left: 225px;">Something</button>
+	<button>Something</button>
+	<button>Something</button>
+	
+	<button>General Details</button>
+	<button>Demographics</button>
+	<button>Something</button>
+	<button>Something</button>-->
+	<!--<button style="position: absolute; top: 30px; left: 10px;">General Details</button>-->
+	<button id="identification" style="position: absolute; top: 35px; left: 260px; font-size: 16px;">Identification</button>
+		<script>
+		document.getElementById('identification').onclick = function() {
+			swal.fire({
+				title: 'Unique Identification number!',
+				text: 'This can be a NIN, Refugee ID or the most recent or renewed passport number(FIA). Remember to select it and verify!',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
+	
+	<script src="sweetalert2.min.js"></script>
+</body>
+</html>
