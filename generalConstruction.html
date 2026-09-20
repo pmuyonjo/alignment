@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
-	<a href="generalSelf.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
+	<a href="generalConstruction.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
 	<!--<button>General Details</button>-->
-	<a href="demographicsSelf.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="demographicsConstruction.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
 	<!--<button>Demographics</button>
 	<button>Something</button>
 	<button>Something</button>
@@ -18,11 +18,11 @@
 	<button>General Details</button>
 	<button>Demographics</button>-->
 	<!--<button style="position: absolute; top: 30px; left: 120px;">Contact Details</button>-->
-	<a href="contactSelf.html" style="position: absolute; top: 40px; left: 105px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Contact Details</a>
+	<a href="contactConstruction.html" style="position: absolute; top: 40px; left: 105px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Contact Details</a>
 	<!--<button style="position: absolute; top: 30px; left: 230px;">Identification Details</button>-->
-	<a href="contactSelf.html" style="position: absolute; top: 40px; left: 230px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Identification Details</a>
+	<a href="contactConstruction.html" style="position: absolute; top: 40px; left: 230px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Identification Details</a>
 	<!--<button style="position: absolute; top: 30px; left: 10px;">Basic Info</button>-->
-	<a href="generalSelf.html" style="position: absolute; top: 40px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Basic Info</a>
+	<a href="generalConstruction.html" style="position: absolute; top: 40px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Basic Info</a>
     <!--<h1>How to use sweetalert2 offline.</h1>
 
     <button onclick="Swal.fire({
@@ -36,10 +36,10 @@
     <form>
 			<!--<label for="codes">Reserve:</label>-->
 				<select style="position: absolute; top: 180px; left: 750px;" name="codes" id="codes">
-					<option value="technical">Other Professional, Scientific and Technical Activities(M74)</option>
-					<option value="personal">Other Personal Service Activities(S96)</option>
-					<!-- <option value="forestry">Agriculture Forestry</option>
-					<option value="marketing">Agriculture Marketing</option>
+					<option value="f41">F41/Construction of Buildings</option>
+					<option value="F42">F42/Civil Engineering</option>
+					<option value="F43">F43/Specialized Construction Activities</option>
+					<!-- <option value="marketing">Agriculture Marketing</option>
 					<option value="other">Agriculture Other</option>
 					<option value="processing">Agriculture Processing</option> -->
 			</select>
@@ -47,8 +47,8 @@
 		<script>
 		document.getElementById('primary').onclick = function() {
 			swal.fire({
-				title: 'Other Professional, Scientific and Technical Activities/M74 and Other Personal Service Activities/S96',
-				text: 'We recommend these options because any best aligns/matches what the customer does. The secondary code will match the Primary by default.',
+				title: 'Kindly choose the most fitting option for the customer',
+				text: 'We recommend these options because any best aligns/matches what the customer does in terms of Construction. The secondary code will match the Primary by default.',
 				icon: 'success',
 				confirmButtonText: 'Okay'
 			});
@@ -65,7 +65,7 @@
 			document.getElementById('reserve').onclick = function() {
 				swal.fire({
 					title: 'Reserve Code.',
-					text: 'Please only use the option shown',
+					text: 'Please use the options shown, which ever best aligns with what the customer does',
 					icon: 'success',
 					confirmButtonText: 'Okay'
 				});
@@ -77,12 +77,13 @@
 		<form>
 			<!--<label for="codes">Reserve:</label>-->
 				<select style="position: absolute; top: 460px; left: 155px;" name="codes" id="codes">
-					<option value="business">Business Services Others</option>
-					<!-- <option value="community">Community, Social and Other Services. Membership Organisations, Community Development</option> -->
-					<!-- <option value="forestry">Agriculture Forestry</option>
-					<option value="marketing">Agriculture Marketing</option>
-					<option value="other">Agriculture Other</option>
-					<option value="processing">Agriculture Processing</option> -->
+					<option value="commercial">Building, Mortgage, Construction and Real Estate Commercial Mortgages</option>
+					<option value="realestate">Building, Mortgage, Construction and Real Estate General Consruction e.g Building/Construction Companies</option>
+					<option value="landpurchase">Building, Mortgage, Construction and Real Estate Land Purchase</option>
+					<option value="property">Building, Mortgage, Construction and Real Estate Property Developers, Estate Agents and Letting Agents</option>
+					<option value="residential">Building, Mortgage, Construction and Real Estate Residential Mortgages</option>
+					<option value="contractors">Building, Mortgage, Construction and Real Estae Specialised Contractors e.g Plumbers, Roof Repair, Electrical Contractors, etc</option> 
+                    <!-- <option value="telecommunications">Transport and Communication Telecommunications</option>  -->
 			</select>
 		</form>
     <!--<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 220px; left: 380px;">bullocks</button>
@@ -208,10 +209,10 @@
     <form>
 			<!--<label for="codes">Reserve:</label>-->
 				<select style="position: absolute; top: 720px; left: 280px;" name="codes" id="codes">
-					<option value="otherService">Other Service Activities</option>
-					<option value="otherCommunity">Other, Community, Social and Personal Service activities</option>
-                    <option value="otherBusiness">Other Business Activities</option>
-                    <!-- <option value="social">Other Community, Social and personal service activities</option> -->
+					<option value="50">Construction/50</option>
+					<option value="84">Real-Estate Activities/84</option>
+                    <!-- <option value="air">Air Transport</option>
+                    <option value="supporting">Supporting and auxiliary transport activities; activitie of travel agencies</option> -->
 					<!-- <option value="forestry">Agriculture Forestry</option>
 					<option value="marketing">Agriculture Marketing</option>
 					<option value="other">Agriculture Other</option>
@@ -221,7 +222,7 @@
 	<script>
 		document.getElementById('sarb').onclick = function() {
 			swal.fire({
-				title: 'Other Professional, Scientific and Technical Activities/M74 OR Other Personal Service activities/S96',
+				title: 'Aligning to Construction',
 				text: 'Kindly select the most appropriate option from the list given.',
 				icon: 'success',
 				confirmButtonText: 'Okay'

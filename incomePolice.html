@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Details Section</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+	<a href="demographicsPolice.html" style="position: absolute; top: 8px; left: 135px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="employmentPolice.html" style="position: absolute; top: 40px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Employment Details</a>
+    <a href="incomePolice.html" style="position: absolute; top: 40px; left: 295px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Income and Expense Details</a>
+	<!--<button style=>General Details</button>-->
+	<a href="generalPolice.html" style="position: absolute; top: 8px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="demographicsPolice.html" style="position: absolute; top: 40px; left: 30px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General</a>
+
+    <button id="gross" style="position: absolute; top: 90px; left: 30px;">Gross Monthly Income</button>
+    <button id="cash" style="position: absolute; top: 90px; left: 250px;">000000000</button>
+		<script>
+			document.getElementById('gross').onclick = function() {
+				swal.fire({
+					title: 'The Gross Monthly Income',
+					text: 'Please select the most appropriate currency type. By Default, it is in UGX',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+
+        <script>
+			document.getElementById('cash').onclick = function() {
+				swal.fire({
+					title: 'The Gross Monthly Income',
+					text: 'A kind reminder to always populate this with the correct gross income figure',
+					icon: 'success',
+					confirmButtonText: 'Okay'
+				});
+			};
+
+		</script>
+	<form >
+			<!--<label  id="status" for="status">Marital Status:</label>-->
+				<select style="position: absolute; top: 90px; left: 180px;" name="status" id="status">
+					<option value="ugx">UGX</option>
+					<option value="eur">EUR</option>
+					<option value="usd">USD</option>
+					<option value="gbp">GBP</option>
+					<!-- <option value="separated">Separated</option>
+					<option value="single">Single</option>
+					<option value="widowed">Widowed</option> -->
+			</select>
+		</form>
+<script src="sweetalert2.min.js"></script>
+
+</body>
+</html>

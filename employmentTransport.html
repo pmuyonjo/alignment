@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
-	<a href="demographicsManager.html" style="position: absolute; top: 8px; left: 135px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
-	<a href="employmentManager.html" style="position: absolute; top: 40px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Employment Details</a>
+	<a href="demographicsTransport.html" style="position: absolute; top: 8px; left: 135px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="employmentTransport.html" style="position: absolute; top: 40px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Employment Details</a>
 	<!--<button style=>General Details</button>-->
-	<a href="generalManager.html" style="position: absolute; top: 8px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
-	<a href="demographicsManager.html" style="position: absolute; top: 40px; left: 30px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General</a>
-	<a href="incomeManager.html" style="position: absolute; top: 40px; left: 295px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Income and Expense Details</a>
+	<a href="generalTransport.html" style="position: absolute; top: 8px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General Details</a>
+	<a href="demographicsTransport.html" style="position: absolute; top: 40px; left: 30px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">General</a>
+	<a href="incomeTransport.html" style="position: absolute; top: 40px; left: 295px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Income and Expense Details</a>
 	<button id="occupation" style="position: absolute; top: 80px; left: 450px;">Occupation</button>
 		<script>
 			document.getElementById('occupation').onclick = function() {
@@ -28,8 +28,8 @@
 	<form >
 			<!--<label  id="status" for="status">Marital Status:</label>-->
 				<select style="position: absolute; top: 80px; left: 538px;" name="status" id="status">
-					<option value="skilled">Skilled Worker</option>
-					<option value="professional">Professional</option>
+					<option value="transportation">Transportation</option>
+					<!-- <option value="professional">Professional</option>
 					<option value="nonskilled">Non Skilled Worker</option>
 					<option value="Personnel">Personnel Services</option>
 					<option value="sales">Sales</option>
@@ -44,7 +44,7 @@
                     <option value="security">Security</option>
                     <option value="architect">Architect</option>
                     <option value="marketing">Marketing</option>
-                    <option value="clerical">Clerical</option>
+                    <option value="clerical">Clerical</option> -->
 			</select>
 		</form>
 		
@@ -53,7 +53,7 @@
 			document.getElementById('employername').onclick = function() {
 				swal.fire({
 					title: 'The Employer Name',
-					text: 'For This Category, Employed, Self-employed other-if the customer is a Manager/Director as well as an owner or "business name " should work.',
+					text: 'For This Category, self employed other , "business name " or "employer name" should work.',
 					icon: 'success',
 					confirmButtonText: 'Okay'
 				});
@@ -63,11 +63,10 @@
 	<form >
 			<!--<label  id="status" for="status">Marital Status:</label>-->
 				<select style="position: absolute; top: 120px; left: 570px;" name="status" id="status">
-                    <option value="employed">Employed</option>
 					<option value="selfemployed">Self Employed</option>
-					<option value="business">"Business Name"</option>
-					<!--<option value="realname">"Government entity employing the customer"</option>
-					<option value="notgiven">Not Given</option>
+					<option value="business">"Business Name" if the customer has his/her own business he/she runs and partakes in</option>
+					<option value="employer">"Employer's name"- who the individual works for</option>
+					<!--<option value="notgiven">Not Given</option>
 					<option value="separated">Separated</option>
 					<option value="single">Single</option>
 					<option value="widowed">Widowed</option>-->
@@ -99,9 +98,9 @@
 					<option value="recurring">Other-Recurring</option>
 					<option value="private">Private Practice</option>
 					<option value="retired">Retired/Pensioner</option>
-					<!-- <option value="selfemployed">Self Employed</option>
+					<option value="selfemployed">Self Employed</option>
 					<option value="student">Student</option>
-					<option value="unemployed">Unemployed</option> -->
+					<option value="unemployed">Unemployed</option>
 			</select>
 		</form>
 <script src="sweetalert2.min.js"></script>
