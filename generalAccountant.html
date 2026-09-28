@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
-	<a href="generalStudent.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
+	<a href="generalAccountant.html" style="position: absolute; top: 8px; left: 5px; display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">General Details</a>
 	<!--<button>General Details</button>-->
-	<a href="demographicsStudent.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
+	<a href="demographicsAccountant.html" style="position: absolute; top: 8px; left: 123px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Demographics</a>
 	<!--<button>Demographics</button>
 	<button>Something</button>
 	<button>Something</button>
@@ -18,11 +18,11 @@
 	<button>General Details</button>
 	<button>Demographics</button>-->
 	<!--<button style="position: absolute; top: 30px; left: 120px;">Contact Details</button>-->
-	<a href="contactStudent.html" style="position: absolute; top: 40px; left: 105px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Contact Details</a>
+	<a href="contactAccountant.html" style="position: absolute; top: 40px; left: 105px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Contact Details</a>
 	<!--<button style="position: absolute; top: 30px; left: 230px;">Identification Details</button>-->
-	<a href="contactStudent.html" style="position: absolute; top: 40px; left: 230px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Identification Details</a>
+	<a href="contactAccountant.html" style="position: absolute; top: 40px; left: 230px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Identification Details</a>
 	<!--<button style="position: absolute; top: 30px; left: 10px;">Basic Info</button>-->
-	<a href="generalStudent.html" style="position: absolute; top: 40px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Basic Info</a>
+	<a href="generalAccountant.html" style="position: absolute; top: 40px; left: 10px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 2px;">Basic Info</a>
     <!--<h1>How to use sweetalert2 offline.</h1>
 
     <button onclick="Swal.fire({
@@ -32,12 +32,12 @@
     });">Click me to show alert</button>-->
 
     <button style="border: none; outline: none; background: transparent; cursor: not-allowed; position: absolute; top: 180px; left: 680px;">Primary</button>
-    <button id="primary" style="position: absolute; top: 180px; left: 750px;">Education/P85</button>
+    <button id="primary" style="position: absolute; top: 180px; left: 750px;">Legal and Accounting Activities/M69</button>
 		<script>
 		document.getElementById('primary').onclick = function() {
 			swal.fire({
-				title: 'Education/P85!',
-				text: 'We recommend this option because it best aligns/matches what the customer does. The secondary code will match the Primary by default.',
+				title: 'Legal and Accounting Activities!',
+				text: 'We recommend this option because it best aligns/matches what the customer does. Take note of the secondary code and differentiate between Lawyers and Accountants',
 				icon: 'success',
 				confirmButtonText: 'Okay'
 			});
@@ -45,7 +45,18 @@
 
 	</script>
     <button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 200px; left: 50px;">Secondary</button>
-    <button style="position: absolute; top: 200px; left: 140px;">SHOULD MATCH/ALIGN WITH PRIMARY</button>
+    <button id="secondary" style="position: absolute; top: 200px; left: 140px;">Legal Activities/M691</button>
+        <script>
+		document.getElementById('secondary').onclick = function() {
+			swal.fire({
+				title: 'Accounting, Book Keeping and auditing activities, Tax Consultancy M692!',
+				text: 'We recommend this option because it best aligns/matches what the customer does. This Subtly differentiates a lawyer from an accountant',
+				icon: 'success',
+				confirmButtonText: 'Okay'
+			});
+		};
+
+	</script>
     <!--<button style="border: none; outline: none; background: transparent; cursor: not-allowed; position: absolute; top: 440px; left: 50px;">Reserve</button>
     -->
 	
@@ -54,7 +65,7 @@
 			document.getElementById('reserve').onclick = function() {
 				swal.fire({
 					title: 'Reserve Code.',
-					text: 'Please only use the option shown !',
+					text: 'Please only use the option shown in the drop down!',
 					icon: 'success',
 					confirmButtonText: 'Okay'
 				});
@@ -66,7 +77,7 @@
 		<form>
 			<!--<label for="codes">Reserve:</label>-->
 				<select style="position: absolute; top: 460px; left: 155px;" name="codes" id="codes">
-					<option value="education">Community, Social and Other Services; Education Services</option>
+					<option value="business">Business Services Other</option>
 					<!-- <option value="fishing">Agriculture Fishing</option>
 					<option value="forestry">Agriculture Forestry</option>
 					<option value="marketing">Agriculture Marketing</option>
@@ -191,20 +202,13 @@
 
 	</script>
 	
-	<button id="sarb"; style="position: absolute; top: 720px; left: 50px;">Industry Classification code or SARB</button>
-    <button style="position: absolute; top: 720px; left: 280px;">Education</button>
-    <form>
-			<!--<label for="accommodation">Accommodation Type</label>-->
-				<select style="position: absolute; top: 720px; left: 280px;" name="accommodation" id="accommodation">
-					<option value="education">Education</option>
-					<option value="student">Other individuals or households, including unemployed persons, students</option>
-			</select>
-		</form>
+	<button style="border: none; outline: none; background: transparent; cursor: not-allowed;position: absolute; top: 720px; left: 50px;">Industry Classification code or SARB</button>
+    <button id="sarb"; style="position: absolute; top: 720px; left: 280px;">Other Service Activities</button>
 	<script>
 		document.getElementById('sarb').onclick = function() {
 			swal.fire({
-				title: 'Industry Classification Code OR SARB!',
-				text: 'These are the ONLY codes for Students in this category and ALWAYS fill this in!',
+				title: 'Other Service Activities!',
+				text: 'This is the ONLY code for Accountants in this category and ALWAYS fill this in!',
 				icon: 'success',
 				confirmButtonText: 'Okay'
 			});
@@ -240,7 +244,7 @@
 
 	</script>
 
-	<a href="index.html" style="position: absolute; top: 900px; left: 900px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">Back to Start Page</a>
+    <a href="index.html" style="position: absolute; top: 900px; left: 900px;display: inline-block; padding: 2px 3px; background-color: #f0f0f0; color: black; text-decoration: none; border-radius: 4px;">Back to Start Page</a>
 
 <script src="sweetalert2.min.js"></script>
 
